@@ -1,0 +1,36 @@
+.sidenav {
+  display: none;
+  position: absolute;
+  background-color: #354259;
+  height: 100%;
+  width: 14rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding: 2rem 3rem;
+  @media (min-width: 650px) {
+    display: block;
+    position: fixed;
+  }
+  a {
+    padding: 0.6rem 0.8rem 0.6rem 0.16rem;
+    text-decoration: none;
+    color: rgba(236, 236, 236, 0.893);
+    display: block;
+    font-size: 1.9rem;
+    &:hover {
+      color: #CDC2AE;
+    }
+  }
+  }
+
+  @media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+  }

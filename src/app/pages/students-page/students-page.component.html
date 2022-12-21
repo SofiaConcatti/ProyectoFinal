@@ -1,0 +1,36 @@
+<div class="table-container"><button (click)="addStudent()" mat-flat-button color="primary">Agregar alumno</button>
+<table mat-table [dataSource]="students">
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> ID </th>
+    <td mat-cell *matCellDef="let element"> {{ element.id }} </td>
+  </ng-container>
+  <ng-container matColumnDef="firstName">
+    <th mat-header-cell *matHeaderCellDef> NOMBRE </th>
+    <td mat-cell *matCellDef="let element"> {{ element.firstName }} </td>
+  </ng-container>
+  <ng-container matColumnDef="lastName">
+    <th mat-header-cell *matHeaderCellDef> APELLIDO </th>
+    <td mat-cell *matCellDef="let element"> {{ element.lastName }} </td>
+  </ng-container>
+  <ng-container matColumnDef="isActive">
+    <th mat-header-cell *matHeaderCellDef> ESTÁ ACTIVO </th>
+    <td mat-cell *matCellDef="let element"> {{ element.isActive }} </td>
+  </ng-container>
+  <ng-container matColumnDef="edit">
+    <th mat-header-cell *matHeaderCellDef> EDITAR </th>
+    <td mat-cell *matCellDef="let element"> <button mat-icon-button (click)="editStudent(element)"> <mat-icon>edit</mat-icon> </button> </td>
+  </ng-container>
+  <ng-container matColumnDef="delete">
+    <th mat-header-cell *matHeaderCellDef> ELIMINAR </th>
+    <td mat-cell *matCellDef="let element">
+     <button  (click)="removeStudent(element)" mat-icon-button>
+        <mat-icon>delete</mat-icon>
+      </button>
+   </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+</div>
+
