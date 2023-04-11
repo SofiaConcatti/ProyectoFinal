@@ -1,10 +1,19 @@
-<i class="uil uil-bars menu-ham"></i>
-<div class="sidenav">
-    <div class="sidenav__nav">
-        <a routerLink="#" >Estudiantes</a>
-        <a routerLink="#" >Notas</a>
-        <a routerLink="#" >Examen</a>
-        <a routerLink="#" >Quiz</a>
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL75a6O5Q6UksSfEgSvJ0HD0U6XwU"
+  crossorigin="anonymous"
+/>
 
-    </div>
-</div>
+<button class="btn btn-primary" (click)="onToggleSidenav()">
+  <i class="fa fa-bars"></i> Menu
+</button>
+
+<mat-drawer #drawer class="sidenav" mode="over" opened>
+  <mat-nav-list>
+    <a mat-list-item routerLink="#">Alumnos</a>
+    <a mat-list-item routerLink="#">Clases</a>
+    <a mat-list-item routerLink="#">Cursos</a>
+    <a mat-list-item routerLink="#">Notas</a>
+  </mat-nav-list>
+</mat-drawer>

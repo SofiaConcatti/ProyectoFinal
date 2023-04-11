@@ -1,10 +1,23 @@
-
-.table-container{
+.table-container {
   width: 70%;
   margin-left: 25%;
+  margin-top: 100px;
 }
 
-table{
+table {
   width: 90%;
-  background-color: #ECE5C7;
+  /*background-color: #ece5c7;*/
+}
+.mat-flat-button.mat-primary,
+.mat-raised-button.mat-primary,
+.mat-fab.mat-primary,
+.mat-mini-fab.mat-primary {
+  background-color: #a4161a;
+}
+.btn-primary {
+  background-color: #a4161a;
+  border-color: #a4161a;
+}
+.btn-primary:hover {
+  background-color: #161a1d;
 }

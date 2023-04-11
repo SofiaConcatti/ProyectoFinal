@@ -1,7 +1,7 @@
 .sidenav {
   display: none;
   position: absolute;
-  background-color: #354259;
+  background-color: #161a1d;
   height: 100%;
   width: 14rem;
   position: fixed;
@@ -10,6 +10,7 @@
   left: 0;
   overflow-x: hidden;
   padding: 2rem 3rem;
+  margin-top: 30px;
   @media (min-width: 650px) {
     display: block;
     position: fixed;
@@ -19,18 +20,21 @@
     text-decoration: none;
     color: rgba(236, 236, 236, 0.893);
     display: block;
-    font-size: 1.9rem;
+    font-size: 25px;
     &:hover {
-      color: #CDC2AE;
+      color: #cdc2ae;
     }
   }
+  #contenido {
+    margin-bottom: 140px; /* ajusta el valor según el tamaño de tu mat-toolbar */
   }
+}
 
-  @media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
   }
   .sidenav a {
     font-size: 18px;
   }
-  }
+}

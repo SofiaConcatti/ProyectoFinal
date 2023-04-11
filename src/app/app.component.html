@@ -1,7 +1,10 @@
-<app-navbar></app-navbar>
+<mat-toolbar color="primary">
+  <span class="title">Gestión de Alumnos</span>
+</mat-toolbar>
+
 <app-page-wrapper>
+  <app-navbar (toggleSidenav)="toggle()"></app-navbar>
   <app-students-page></app-students-page>
 </app-page-wrapper>
 
 <router-outlet></router-outlet>
-

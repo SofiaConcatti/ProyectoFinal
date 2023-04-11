@@ -1,0 +1,16 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.mat-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin-bottom: 100px;
+}
+.mat-toolbar.mat-primary {
+  background-color: #660708;
+}
+.title {
+  font-size: 30px;
+}
