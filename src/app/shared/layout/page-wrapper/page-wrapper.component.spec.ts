@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+//
 import { PageWrapperComponent } from './page-wrapper.component';
 
 describe('PageWrapperComponent', () => {
@@ -8,9 +8,8 @@ describe('PageWrapperComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PageWrapperComponent ]
-    })
-    .compileComponents();
+      declarations: [PageWrapperComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(PageWrapperComponent);
     component = fixture.componentInstance;

@@ -1,6 +1,5 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { StudentDialogComponent } from './student-dialog.component';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 describe('StudentDialogComponent', () => {
   let component: StudentDialogComponent;
@@ -8,9 +7,8 @@ describe('StudentDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ StudentDialogComponent ]
-    })
-    .compileComponents();
+      declarations: [StudentDialogComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(StudentDialogComponent);
     component = fixture.componentInstance;
@@ -20,4 +18,5 @@ describe('StudentDialogComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  ////revisar esto
 });
